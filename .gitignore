@@ -1,0 +1,92 @@
+# ============================================================
+# 本项目策略：保留最小 IDEA 元数据
+#
+#   ✓ 上传 Object.iml、.idea/misc.xml、.idea/modules.xml
+#     因为本项目**没有构建工具**（无 pom.xml / build.gradle），
+#     这几个文件承载了「src 是源码根目录」「JDK 21」等必要信息。
+#     传上去之后，别人 clone 下来用 IDEA 打开即可直接运行，
+#     不需要手动 Mark Directory as → Sources Root。
+#
+#   ✗ 忽略 .idea/workspace.xml 等纯个人状态文件
+#   ✗ 忽略 out/ 编译产物
+#
+# 注意：本文件**刻意不包含** "*.iml" 规则，因为要保留 Object.iml。
+#       将来若改用 Maven / Gradle 管理项目，可以在此追加：
+#           .idea/
+#           *.iml
+# ============================================================
+
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# —— 追加：IDEA 个人级文件（保留项目级配置）——
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/httpRequests/
+.idea/git_toolbox_*.xml
+.idea/dataSources/
+.idea/dataSources.local.xml
+*.iws
+*.ipr
+
+### Java 编译产物 ###
+*.class
+hs_err_pid*
+replay_pid*
+
+### 构建工具输出（将来引入 Maven / Gradle 时生效）###
+target/
+build/
+.gradle/
+
+### 密钥与本地配置（防患于未然）###
+.env
+.env.*
+*.jks
+*.keystore
+*.pem
+*.key
+*.p12
+application-local.yml
+application-local.properties
+secrets.properties
+
+### 日志与临时文件 ###
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+*~
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+desktop.ini
