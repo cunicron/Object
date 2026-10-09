@@ -1,4 +1,28 @@
-﻿MIT License
+﻿================================================================================
+项目来源说明 / Project Origin
+================================================================================
+
+本仓库为个人学习性质的项目。代码是跟随 B 站「黑马程序员」2026 版
+AI + Java 零基础教程动手编写的示例代码（纯手搓），用于记录个人学习过程。
+
+说明事项：
+
+1. 本仓库中的代码为个人学习练习成果，仅供学习参考。
+2. 教程内容、课程设计、题目要求及相关资料的著作权归「黑马程序员」所有。
+3. 下方的 MIT 许可证仅适用于本仓库中由本人编写的代码，
+   不适用于任何课程原始资料或教程内容。
+
+This repository is a personal learning project. The code is example code
+hand-written while following the "黑马程序员" (Bilibili) AI + Java
+beginner course, kept as a record of the learning process.
+
+The MIT license below applies only to the code written by the author in this
+repository. It does NOT apply to any original course materials or tutorial
+content, whose copyright belongs to their respective owners.
+
+================================================================================
+
+MIT License
 
 Copyright (c) 2026 cunicron
 
